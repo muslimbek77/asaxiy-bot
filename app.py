@@ -26,7 +26,7 @@ async def echo_message(message: types.Message):
     content=rasm_content(message.text)[:10]
     
     for j,i in enumerate(content):
-        await message.reply_photo(f"{i[0]}",caption=f"{j+1}.Mahsulot:{i[1]}\nNarxi:{i[2]}\nBo'lib to'lash:{i[3]}")
+        await message.reply_photo(f"{i[0]}",caption=f"{j+1}.Mahsulot:{i[1]}\nNarxi/chegirmada:{i[2]}\nBo'lib to'lash:{i[3]}")
        
     if not content:
          await message.reply("Afsuski hech narsa topilmadi!")
