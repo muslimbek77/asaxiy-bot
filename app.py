@@ -28,7 +28,7 @@ async def echo_message(message: types.Message):
     for j,i in enumerate(content):
         await message.reply_photo(f"{i[0]}",caption=f"{j+1}.Mahsulot:{i[1]}\nNarxi:{i[2]}\nBo'lib to'lash:{i[3]}")
        
-    if content== None:
+    if not content:
          await message.reply("Afsuski hech narsa topilmadi!")
         
 if __name__ == '__main__':
